@@ -2,10 +2,17 @@ var array = [], points = [];
 
 function setup() {
   createCanvas(1000, 800);
+  //I shows how many circles are generated
   for(var i = 0; i < 15; i++) {
+    //Manipulating the variables below in a relational method can lead to cool pattern or even fractal graphs!
+    //Mess around with these variables to create cool spirographs (or be random ¯\_(ツ)_/¯)
+    
     array[i] = [];
+    //Represents Diamter of circle
     array[i][0] = 20;
+    //Reperesents angle of start
     array[i][1] = 0;
+    //Represent degree of rotation per screen refresh
     array[i][2] = i*cos(Math.pow(-1, i))/180*PI;
   }
   console.log(array);
