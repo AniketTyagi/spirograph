@@ -6,6 +6,13 @@ function setup() {
   for(var i = 0; i < 15; i++) {
     //Manipulating the variables below in a relational method can lead to cool pattern or even fractal graphs!
     //Mess around with these variables to create cool spirographs (or be random ¯\_(ツ)_/¯)
+    //Great example set (Spirograph forms star fractal):
+    /*for(var i = 0; i < 5; i++) {
+    array[i] = [];
+    array[i][0] = 80/(Math.pow((i+1), 2));
+    array[i][1] = -PI/2;
+    array[i][2] = Math.pow(4, i)*sin(Math.pow(-1, i))/180*PI*0.2;
+    }*/
     
     array[i] = [];
     //Represents Diamter of circle
